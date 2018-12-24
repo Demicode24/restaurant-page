@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative:700');
+@import "reset.css";
+
+header {
+  height: 80px;
+  width: 100%;
+  background: white;
+  padding: 17px 100px;
+  margin-bottom: 30px;
+}
+
+header .logo {
+  position: absolute;
+  width: 422px;
+}
+
+header .logo img {
+  width: 120px;
+  height: 60px;
+}
+
+header .logo h2 {
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+  color: #646464;
+}
+
+header .nav {
+  position: relative;
+  left: 650px;
+  top: 43px;
+  float: left;
+}
+
+header .nav a {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+  border-right: 3px solid #676C7F;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header .nav a:hover {
+  color: #a61a1a;
+}
+
+header .icon {
+  color: #646464;
+  font-size: 25px;
+  float: left;
+  position: relative;
+  left: 662px;
+  top: 40px;
+}
+
+@media only screen and (max-width: 1215px) {}
+
+@media only screen and (max-width: 1025px) {}
+
+@media only screen and (max-width: 765px) {
+  header {
+    margin-bottom: 100px;
+  }
+
+  header .logo {
+    position: relative;
+  }
+
+  header .nav {
+    position: relative;
+    left: 50px;
+    top: 43px;
+    /* float: left; */
+  }
+}
+
+/*
+///////////////////////////////////////////////////////////////////////////////
+ */
+/*#jumbotron {
+  width: 100%;
+}
+
+#jumbotron .jumbo-info {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('http://www.gratenews.com/wordpress/wp-content/uploads/2017/03/Refreshed-Hooked@Edge-Seafood-Buffet.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+#jumbotron h4 {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: absolute;
+  top: 240px;
+  left: 450px;
+}
+
+#jumbotron h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: 300px;
+  left: 238px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+#jumbotron button {
+  background-color: #f14736;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  font-size: 1rem;
+  position: absolute;
+  top: 530px;
+  left: 570px;
+}
+
+#jumbotron button:hover {
+  background: #824741;
+}
+
+@media only screen and (max-width: 1215px) {}
+
+@media only screen and (max-width: 1023px) {}
+
+@media only screen and (max-width: 769px) {
+  #jumbotron .jumbo-info {
+    width: 100%;
+  }
+
+  #jumbotron h4 {
+    position: absolute;
+    top: 240px;
+    left: 190px;
+  }
+
+  #jumbotron h1 {
+    position: absolute;
+    top: 300px;
+    left: 34px;
+  }
+
+  #jumbotron button {
+    position: absolute;
+    top: 590px;
+    left: 320px;
+  }
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+ */
+#service-container {
+  width: 100%;
+  height: 350px;
+  padding: 50px 175px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+#service-container .service-card .fas {
+  font-size: 40px;
+  color: red;
+  position: relative;
+  left: 90px;
+}
+
+#service-container .service-card h1 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 20px;
+}
+
+#service-container .service-card p {
+  font-size: 13px;
+  font-weight: 300px;
+  color: #676C7F;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1215px) {}
+
+@media only screen and (max-width: 1025px) {}
+
+@media only screen and (max-width: 768px) {
+  #service-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-bottom: 200px;
+  }
+
+  #service-container .service-card {
+    height: 150px;
+  }
+
+  #service-container .service-card .fas {
+    position: relative;
+    left: 140px;
+  }
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+ */
+#history-section {
+  width: 100%;
+  height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 200px;
+  margin-bottom: 100px;
+}
+
+#history-section .history-info h5 {
+  text-transform: capitalize;
+  color: #676C7F;
+}
+
+#history-section .history-info h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 25px 0;
+}
+
+#history-section .history-info p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 10px 130px 0 0px;
+  color: #646464;
+}
+
+#history-section .under img {
+  position: relative;
+  width: 370px;
+  height: 430px;
+  z-index: -1;
+}
+
+#history-section .over {
+  display: inline-block;
+}
+
+#history-section .over img {
+  width: 290px;
+  height: 350px;
+  position: relative;
+  bottom: 520px;
+  left: 200px;
+  z-index: 1;
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+ */
+#photo-grid {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+}
+
+#photo-grid .row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#photo-grid .row1 img {
+  width: 337px;
+  height: 337px;
+}
+
+#photo-grid .row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#photo-grid .row2 img {
+  width: 337px;
+  height: 337px;
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+ */
+#menu-area .container {
+  width: 100%;
+  height: 800px;
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+
+#menu-area .container .title {
+  display: block;
+  position: relative;
+  left: 30px;
+  top: 150px;
+}
+
+#menu-area .container .title h5 {
+  font-size: 15px;
+  text-align: center;
+  color: #646464;
+  text-transform: capitalize;
+}
+
+#menu-area .container .title h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 25px 0;
+  text-align: center;
+}
+
+#menu-area .container .menu-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  /* left: 28px; */
+  top: 150px;
+  padding: 25px;
+}
+
+#menu-area .container .menu-info .column1 {
+  margin-right: 75px;
+}
+
+#menu-area .container .menu-info .column1 .entree1 {
+  border-bottom: 2px solid #e7e7e7;
+}
+
+#menu-area .container .menu-info .column1 .entree1 h2 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 15px 0 10px 0;
+}
+
+#menu-area .container .menu-info .column1 .entree1 span p {
+  float: right;
+  font-size: 20px;
+  font-weight: 600;
+  color: #d55345;
+}
+
+#menu-area .container .menu-info .column1 .entree1 p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8d8d8d;
+  padding: 15px 0;
+}
+
+/*////////////////Column 2///////////////////////////////////////////*/
+#menu-area .container .menu-info .column2 {
+  margin-left: 75px;
+}
+
+#menu-area .container .menu-info .column2 .entree1 {
+  border-bottom: 2px solid #e7e7e7;
+}
+
+#menu-area .container .menu-info .column2 .entree1 h2 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 15px 0 10px 0;
+}
+
+#menu-area .container .menu-info .column2 .entree1 span p {
+  float: right;
+  font-size: 20px;
+  font-weight: 600;
+  color: #d55345;
+}
+
+#menu-area .container .menu-info .column2 .entree1 p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8d8d8d;
+  padding: 15px 0;
+}
+
+#menu-area .container button {
+  position: relative;
+  top: 200px;
+  left: 500px;
+  background: #f14736;
+  border: none;
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+#menu-area .container button:hover {
+  background: #824741;
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+*/
+#jumbotron2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://www.nrn.com/sites/nrn.com/files/restaurant-waitress-thinkstock-promo_4.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 50px;
+}
+
+#jumbotron2 .quote {
+  width: 650px;
+  height: 420px;
+  position: relative;
+  top: 100px;
+  left: 378px;
+  padding: 0 50px 0 50px;
+}
+
+#jumbotron2 .quote .fas {
+  position: relative;
+  left: 230px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+#jumbotron2 .quote h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.4;
+  padding: 60px 0;
+}
+
+#jumbotron2 .quote p {
+  position: relative;
+  left: 170px;
+  color: white;
+  font-size: 25px;
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+ */
+#recipe-section .container {
+  width: 100%;
+  height: 700px;
+  padding: 0 200px;
+  margin-bottom: 80px;
+}
+
+#recipe-section .container .title {
+  display: block;
+  position: relative;
+  top: 50px;
+}
+
+#recipe-section .container .title p {
+  font-size: 15px;
+  text-align: center;
+  color: #646464;
+  text-transform: capitalize;
+}
+
+#recipe-section .container .title h1 {
+  font-size: 40px;
+  text-transform: capitalize;
+  padding: 25px 0;
+  text-align: center;
+}
+
+#recipe-section .container .card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  position: relative;
+  top: 100px;
+}
+
+#recipe-section .container .recipe-cards {
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+}
+
+#recipe-section .container .card-container .recipe-cards p span {
+  font-size: 15px;
+  font-weight: 300;
+  color: #666666;
+}
+
+#recipe-section .container .card-container .recipe-cards h2 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+#recipe-section .container .card-container .recipe-cards p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #666666;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+#recipe-section .container button {
+  position: relative;
+  top: 200px;
+  left: 400px;
+  background: #f14736;
+  border: none;
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all .2s ease-in-out;
+}
+
+#recipe-section .container button:hover {
+  background: #824741;
+}
+
+/*
+////////////////////////////////////////////////////////////////////////////////
+ */
+#footer {
+  width: 100%;
+  height: 250px;
+  padding: 0 100px;
+}
+
+#footer .info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#footer .info-container .statement h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#footer .info-container .statement {
+  padding: 0 48px;
+}
+
+#footer .info-container .statement p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8c8c8c;
+  line-height: 1.5;
+}
+
+#footer .info-container .service-time .lunch {
+  margin-bottom: 33px;
+}
+
+#footer .info-container .service-time .lunch h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#footer .info-container .service-time .lunch p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8c8c8c;
+  line-height: 1.5;
+}
+
+#footer .info-container .service-time .dinner h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#footer .info-container .service-time .dinner p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8c8c8c;
+  line-height: 1.5;
+}
+
+#footer .info-container .links h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#footer .info-container .links ul a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8c8c8c;
+  text-decoration: none;
+  line-height: 2;
+  list-style: disc;
+  padding: 0 0 0 15px;
+}
+
+#footer .info-container .contact h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#footer .info-container .contact p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #cc5c50;
+}
+
+#footer .info-container .contact h2 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #666666;
+  margin-top: 35px;
+}
+
+*/

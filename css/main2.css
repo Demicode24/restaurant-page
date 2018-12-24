@@ -1,0 +1,17 @@
+/* @import "reset.css"; */
+.slider .slides li .btn {
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+/* .section-about .container .row .col .card .material-icons {
+  position: relative;
+  left: 75px;
+} */
+.section-about .container .row .col .card span h5 {
+  align-items: center;
+}
+
+#menu .section-menu .container .heading h1 {
+  font-weight: 600;
+}
