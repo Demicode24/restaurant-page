@@ -1,5 +1,9 @@
 /* @import "reset.css"; */
 
+body {
+  background: #eee;
+}
+
 .nav-wrapper .brand-logo {
   position: relative;
 }
