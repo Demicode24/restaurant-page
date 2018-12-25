@@ -1,4 +1,9 @@
 /* @import "reset.css"; */
+
+.nav-wrapper .brand-logo {
+  position: relative;
+}
+
 .slider .slides li .btn {
   margin-top: 15px;
   border-radius: 15px;
