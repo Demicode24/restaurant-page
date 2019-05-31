@@ -15,6 +15,24 @@
 
 <body>
 
+  <style>
+      #overlay {
+    position: absolute; /* Sit on top of the page content */
+    /* width: 100%; Full width (cover the whole page) */
+    /* height: 100%; Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5); /* Black background with opacity */
+   
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  
+  .high{
+    z-index: 1000;
+  }
+  </style>
  
   <div class="navbar-fixed">
     <nav class="cyan darken-3">
@@ -52,24 +70,27 @@
   <section id="home" class="slider scrollspy">
     <ul class="slides">
       <li>
+        <div id="overlay"></div>
         <img src="img/slide3.jpeg" alt="">
         <div class="caption center-align">
-          <h3 class=" blue-grey-text text-lighten-2">Welcome to Pescatarian Heaven</h3>
-          <a href="#" class="btn waves-effect waves-light btn-large cyan darken-3">Book a Table</a>
+          <h3 class="high white-text">Welcome to Pescatarian Heaven</h3>
+          <a href="https://www.opentable.com" target="_blank" class="btn waves-effect waves-light btn-large cyan darken-3 high">Book a Table</a>
         </div>
       </li>
       <li>
+        <div id="overlay"></div>
         <img src="img/slide2.1.jpeg" alt="">
         <div class="caption center-align">
-          <h3 class=" blue-grey-text text-lighten-2">Lorem ipsum dolor sit amet,</h3>
-          <a href="#" class="btn waves-effect waves-light btn-large cyan darken-3">Book a Table</a>
+          <h3 class="high white-text">Lorem ipsum dolor sit amet,</h3>
+          <a href="https://www.opentable.com" target="_blank" class="btn waves-effect waves-light btn-large cyan darken-3 high">Book a Table</a>
         </div>
       </li>
       <li>
+        <div id="overlay"></div>
         <img src="img/slide1.jpeg" alt="">
         <div class="caption center-align">
-          <h3 class=" blue-grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-          <a href="#" class="btn waves-effect waves-light btn-large cyan darken-3">Book a Table</a>
+          <h3 class="high white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <a href="https://www.opentable.com" target="_blank" class="btn waves-effect waves-light btn-large cyan darken-3 high">Book a Table</a>
         </div>
       </li>
     </ul>
@@ -162,7 +183,7 @@
       </div>
     </div>
   </section>
-  <section id="Gallery" class="section section-gallery scrollspy">
+  <section id="gallery" class="section section-gallery scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12 m6 l3">
@@ -260,7 +281,7 @@
         </div>
       </div>
       <div class="center-align">
-        <a href="#!" class="waves-effect waves-light btn red center-align">View Full Menu</a>
+        <a href="https://menupages.com/youngs-seafood/514-belvedere-clearwater-rd-north-augusta#menu" target="_blank" class="waves-effect waves-light btn red center-align">View Full Menu</a>
       </div>
     </div>
   </section>
@@ -311,7 +332,7 @@
         </div>
       </div>
       <div class="center-align">
-        <a href="#!" class="waves-effect waves-light btn red center-align">Read All Posts</a>
+        <a href="http://www.grubstreet.com/" target="_blank" class="waves-effect waves-light btn red center-align">Read All Posts</a>
       </div>
     </div>
   </section>
